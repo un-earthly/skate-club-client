@@ -6,6 +6,10 @@ module.exports = {
   ],
   theme: {
     extend: {},
+    fontFamily: {
+      "chivo": 'Chivo Mono',
+      'lato': 'Lato',
+      'caveat': 'Caveat'
+    }
   },
-  plugins: [],
 }
