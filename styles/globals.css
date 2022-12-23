@@ -4,9 +4,13 @@
 @tailwind utilities;
 
 @layer {
-
     .navlink {
-        @apply text-xl font-bold font-chivo uppercase relative overflow-hidden duration-200
+        @apply font-bold font-chivo uppercase relative overflow-hidden duration-200 lg:text-xl
+    }
+
+
+    .navlink>* {
+        @apply block
     }
 
     .active.navlink {
@@ -15,6 +19,10 @@
 
     .active.navlink.black {
         @apply text-black
+    }
+
+    .body__content {
+        @apply px-4 py-8
     }
 }
 

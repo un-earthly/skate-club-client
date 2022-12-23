@@ -4,45 +4,40 @@ import { useRouter } from "next/router"
 export default function Navbar() {
     const router = useRouter()
     const isActive = router.pathname
-    // console.log(isActive)
-    const links = <>
-        <Link href="/story">
-            <li className={`${isActive === "/story" ? "active" : ""} navlink`}>
-                Our Story
-            </li>
-        </Link>
-        <Link href="/gallery">
-            <li className={`${isActive === "/gallery" ? "active" : ""} navlink`}>
-                gallery
-            </li>
-        </Link>
-        <Link href="/classes">
-            <li className={`${isActive === "/classes" ? "active" : ""} navlink`}>
-                classes
-            </li>
-        </Link>
-        <Link href="/events">
-            <li className={`${isActive === "/events" ? "active" : ""} navlink`}>
-                events
-            </li>
-        </Link>
-        <Link href="/admission">
-            <li className={`${isActive === "/admission" ? "active" : ""} navlink`}>
-                admission
-            </li>
-        </Link>
-        <Link href="/policies">
-            <li className={`${isActive === "/policies" ? "active" : ""} navlink`}>
-                policies
-            </li>
-        </Link>
 
-
-    </>
     return (
-        <div className='text-white min-h-screen'>
+        <div className='text-white min-h-screen overflow-hidden'>
             <ul className='bg-white text-black p-8'>
-                {links}
+                <li className={`${isActive === "/story" ? "active" : ""} navlink`}>
+                    <Link href="/story">
+                        Our Story
+                    </Link>
+                </li>
+                <li className={`${isActive === "/gallery" ? "active" : ""} navlink`}>
+                    <Link href="/gallery">
+                        gallery
+                    </Link>
+                </li>
+                <li className={`${isActive === "/classes" ? "active" : ""} navlink`}>
+                    <Link href="/classes">
+                        classes
+                    </Link>
+                </li>
+                <li className={`${isActive === "/events" ? "active" : ""} navlink`}>
+                    <Link href="/events">
+                        events
+                    </Link>
+                </li>
+                <li className={`${isActive === "/admission" ? "active" : ""} navlink`}>
+                    <Link href="/admission">
+                        admission
+                    </Link>
+                </li>
+                <li className={`${isActive === "/policies" ? "active" : ""} navlink`}>
+                    <Link href="/policies">
+                        policies
+                    </Link>
+                </li>
             </ul>
 
             <Link href="/">
