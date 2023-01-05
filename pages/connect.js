@@ -11,7 +11,13 @@ export default function Connect() {
                 <title>Connect With Skull Skate Society</title>
             </Head>
             <main className='body__content'>
-                Connect</main>
+                Connect
+                {/* coaches */}
+                {/* coach contact */}
+                {/* fb contact */}
+                {/* yt */}
+                {/* direct contact form */}
+            </main>
         </>
     )
 }

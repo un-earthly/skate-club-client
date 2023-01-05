@@ -1,43 +1,20 @@
 import Link from 'next/link'
 import React from 'react'
 import { useRouter } from "next/router"
+import data from "../../data.json"
+
 export default function Navbar() {
     const router = useRouter()
-    const isActive = router.pathname
+    const isActive = router.pathname.slice(1)
 
     return (
         <div className='text-white min-h-screen overflow-hidden'>
             <ul className='bg-white text-black p-8'>
-                <li className={`${isActive === "/story" ? "active" : ""} navlink`}>
-                    <Link href="/story">
-                        Our Story
+                {data.links.slice(0, 6).map((link, i) => <li key={i} className={`${isActive === link ? "active" : ""} navlink`}>
+                    <Link href={"/" + link}>
+                        {link === "story" ? "Our Story" : link}
                     </Link>
-                </li>
-                <li className={`${isActive === "/gallery" ? "active" : ""} navlink`}>
-                    <Link href="/gallery">
-                        gallery
-                    </Link>
-                </li>
-                <li className={`${isActive === "/classes" ? "active" : ""} navlink`}>
-                    <Link href="/classes">
-                        classes
-                    </Link>
-                </li>
-                <li className={`${isActive === "/events" ? "active" : ""} navlink`}>
-                    <Link href="/events">
-                        events
-                    </Link>
-                </li>
-                <li className={`${isActive === "/admission" ? "active" : ""} navlink`}>
-                    <Link href="/admission">
-                        admission
-                    </Link>
-                </li>
-                <li className={`${isActive === "/policies" ? "active" : ""} navlink`}>
-                    <Link href="/policies">
-                        policies
-                    </Link>
-                </li>
+                </li>)}
             </ul>
 
             <Link href="/">
@@ -46,22 +23,11 @@ export default function Navbar() {
                 </div>
             </Link>
             <div className="p-8 ">
-                <Link href="/blogs">
-                    <div className={`${isActive === "/blogs" ? "active" : ""} navlink black`}>
-                        blogs
-                    </div>
-                </Link>
-                <Link href="/shop">
-                    <div className={`${isActive === "/shop" ? "active" : ""} navlink black`}>
-                        shop
-                    </div>
-                </Link>
-                <Link href="/connect">
-                    <div className={`${isActive === "/connect" ? "active" : ""} navlink black`}>
-                        Connect
-                    </div>
-                </Link>
-
+                {data.links.slice(6, 9).map((link, i) => <div key={i} className={`${isActive === link ? "active" : ""} navlink black`}>
+                    <Link href={"/" + link}>
+                        {link}
+                    </Link>
+                </div>)}
             </div>
 
         </div>
