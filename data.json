@@ -1,4 +1,16 @@
 {
+    "titles": {
+        "gallery": "Gallery of Skull Skate Society",
+        "story": "Our Story - Skull Skate Society",
+        "classes": "Schedule of Classes - Skull Skate Society",
+        "events": "Events by Skull Skate Society",
+        "admission": "Admission - Skull Skate Society",
+        "policies": "Policies - Skull Skate Society",
+        "blogs": "Our Blogs On Blading - Skull Skate Society",
+        "shop": "Shop Your Essential Rolling Gears - Skull Skate Society",
+        "connect": "Connect With Skull Skate Society",
+        "home": "Home - Skull Skate Society"
+    },
     "links": [
         "story",
         "gallery",
@@ -9,5 +21,44 @@
         "blogs",
         "shop",
         "connect"
+    ],
+    "gallaryImages": [
+        "https://images.unsplash.com/photo-1520045892732-304bc3ac5d8e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fHNrYXRlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+        "https://images.unsplash.com/photo-1547447134-cd3f5c716030?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHNrYXRlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+        "https://images.unsplash.com/photo-1496886077455-6e206da90837?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fHNrYXRlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+        "https://images.unsplash.com/photo-1542531365-8cedfed02b04?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8c2thdGV8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
+        "https://images.unsplash.com/photo-1611508348648-e8e330ca417c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
+        "https://images.unsplash.com/photo-1609773335024-be4301497ea9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8aW5saW5lJTIwc2thdGV8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
+        "https://images.unsplash.com/photo-1615670319396-d2ce67c79abd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1029&q=80",
+        "https://images.unsplash.com/photo-1613077103451-b79697215ea0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGlubGluZSUyMHNrYXRlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+    ],
+    "instructors": [
+        {
+            "pp": "https://randomuser.me/api/portraits/men/85.jpg",
+            "name": "Douglas Mendoza",
+            "mail": "douglas.mendoza@example.com",
+            "phone": "(774) 534-2447",
+            "achivments": "speedstar",
+            "fb": "https://www.fb.com/",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium optio, eaque rerum! Provident similique accusantium nemo autem. Veritatis obcaecati tenetur iure eius earum ut molestias architecto voluptate aliquam nihil, eveniet aliquid culpa officia aut! Impedit sit sunt quaerat, odit, quia. Quo neque error repudiandae fuga? Ipsa laudantium molestias eos sapiente officiis modi at sunt excepturi expedita sint? Sed quibusdam"
+        },
+        {
+            "pp": "https://randomuser.me/api/portraits/men/82.jpg",
+            "name": "Mason Mills",
+            "mail": "mason.mills@example.com",
+            "phone": "(774) 534-2447",
+            "achivments": "long ride champ",
+            "fb": "https://www.fb.com/",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium optio, eaque rerum! Provident similique accusantium nemo autem. Veritatis obcaecati tenetur iure eius earum ut molestias architecto voluptate aliquam nihil, eveniet aliquid culpa officia aut! Impedit sit sunt quaerat, odit, quia. Quo neque error repudiandae fuga? Ipsa laudantium molestias eos sapiente officiis modi at sunt excepturi expedita sint? Sed quibusdam"
+        },
+        {
+            "pp": "https://randomuser.me/api/portraits/women/74.jpg",
+            "name": "Camila Jimenez",
+            "mail": "camila.jimenez@example.com",
+            "phone": "(774) 534-2447",
+            "achivments": "tactics master",
+            "fb": "https://www.fb.com/",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium optio, eaque rerum! Provident similique accusantium nemo autem. Veritatis obcaecati tenetur iure eius earum ut molestias architecto voluptate aliquam nihil, eveniet aliquid culpa officia aut! Impedit sit sunt quaerat, odit, quia. Quo neque error repudiandae fuga? Ipsa laudantium molestias eos sapiente officiis modi at sunt excepturi expedita sint? Sed quibusdam"
+        }
     ]
 }

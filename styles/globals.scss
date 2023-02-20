@@ -24,6 +24,19 @@
     .body__content {
         @apply px-4 py-8
     }
+
+    .heading-1 {
+        transition: .5s;
+        
+        &:hover{
+            text-shadow: rgb(0, 255, 255,.3) 1px 1px 5px;
+        }
+        @apply text-center uppercase font-chivo
+        
+    }
+    .icons{
+        @apply space-x-2 flex items-center justify-end
+    }
 }
 
 .navlink::after {

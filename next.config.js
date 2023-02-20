@@ -3,4 +3,11 @@ const nextConfig = {
   reactStrictMode: true,
 }
 
+module.exports = {
+  devServer: {
+    cache: false,
+    hot: false
+  }
+}
+
 module.exports = nextConfig
