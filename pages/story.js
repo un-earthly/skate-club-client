@@ -14,7 +14,7 @@ export default function Story() {
                     story of why the company was founded
                 </h1>
                 <h1>
-                    Highlight your background and your founding team's role
+                    Highlight your background and your founding team&apos;s role
                 </h1>
                 <h1>
                     Document the evolution of the company

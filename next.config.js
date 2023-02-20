@@ -7,7 +7,8 @@ module.exports = {
   devServer: {
     cache: false,
     hot: false
-  }
+  },
+  images: false,
 }
 
 module.exports = nextConfig
