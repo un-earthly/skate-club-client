@@ -2,6 +2,23 @@ import Head from 'next/head'
 import React from 'react'
 import data from "../data.json"
 export default function Classes() {
+    const classRoutine = [
+        {
+            day: "Monday",
+            classes: [
+                { time: "9:00 AM - 10:30 AM", subject: "Mathematics", teacher: "Mr. Smith" },
+                { time: "11:00 AM - 12:30 PM", subject: "Science", teacher: "Ms. Johnson" }
+            ]
+        },
+        {
+            day: "Tuesday",
+            classes: [
+                { time: "9:00 AM - 10:30 AM", subject: "English", teacher: "Mr. Brown" },
+                { time: "11:00 AM - 12:30 PM", subject: "History", teacher: "Ms. Davis" }
+            ]
+        },
+        // Add more days and classes as needed
+    ];
     return (
         <>
             <Head>
@@ -10,7 +27,23 @@ export default function Classes() {
                 <title>{data.titles.classes}</title>
             </Head>
             <main className='body__content'>
-                Classes
+                <div className="container mx-auto px-4 py-8">
+                    <h2 className="text-3xl font-bold text-center mb-8">Class Routine</h2>
+                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                        {classRoutine.map((day, index) => (
+                            <div key={index} className="bg-white rounded-lg shadow-md p-4">
+                                <h3 className="text-lg font-semibold mb-4">{day.day}</h3>
+                                <ul>
+                                    {day.classes.map((classItem, classIndex) => (
+                                        <li key={classIndex} className="mb-2">
+                                            <span className="font-semibold">{classItem.time}</span> - {classItem.subject} ({classItem.teacher})
+                                        </li>
+                                    ))}
+                                </ul>
+                            </div>
+                        ))}
+                    </div>
+                </div>
             </main>
         </>
     )

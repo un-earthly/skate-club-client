@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import data from "../data.json"
+import PhilosophyCard from '../components/landing/philosophyCard'
 export default function Home() {
   return (
     <>
@@ -9,10 +10,80 @@ export default function Home() {
         <link rel="shortcut icon" href="/logo_icon.png" type="image/x-icon" />
         <title>{data.titles.home}</title>
       </Head>
-      <main className='body__content'>
-        <div className="text-3xl">
-          <h1>home</h1>
+      <main className=''>
+        <div>
+          <section
+            className="bg-cover font-lato text-white py-20 h-screen flex items-center justify-center"
+            style={{ backgroundImage: "url('/imgs/banner.jpg')" }}
+          >            <div className="container mx-auto text-center">
+              <h1 className="text-5xl font-chivo font-bold mb-4">Welcome to Skull Skate Society</h1>
+              <p className="text-lg mb-8">Join our community and embrace the skateboarding culture!</p>
+              <button className="bg-transparent text-white py-2 px-6 font-semibold border duration-300 hover:bg-black hover:border-black">Get Started</button>
+            </div>
+          </section>
+
+          <div className="grid grid-cols-2 backdrop-blur-xl
+ place-items-center justify-center gap-8 py-20" style={{
+            backgroundImage: "url('/imgs/philosophy.jpg')" 
+          }}>
+            {
+              data.philosophies.map((d) => {
+                return <PhilosophyCard cardData={
+                  {
+                    icon: d.icon,
+                    header: d.title,
+                    description: d.description,
+                  }
+                } />
+              })
+            }
+
+          </div>
+
+          <section className="bg-gray-100 py-20">
+            <div className="container mx-auto text-center">
+              <h2 className="text-4xl font-bold mb-8">Success Stories</h2>
+              <p className="text-lg mb-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+          </section>
+
+          <section className="py-20">
+            <div className="container mx-auto text-center">
+              <h2 className="text-4xl font-bold mb-8">Featured Achievements of Students</h2>
+              <p className="text-lg mb-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+          </section>
+
+          <section className="bg-gray-100 py-20">
+            <div className="container mx-auto text-center">
+              <h2 className="text-4xl font-bold mb-8">Recent and Upcoming Events</h2>
+              <p className="text-lg mb-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+          </section>
+
+          <section className="py-20">
+            <div className="container mx-auto text-center">
+              <h2 className="text-4xl font-bold mb-8">Our Speciality/Facilities</h2>
+              <p className="text-lg mb-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+          </section>
+
+          <section className="bg-gray-100 py-20">
+            <div className="container mx-auto text-center">
+              <h2 className="text-4xl font-bold mb-8">Recent Counts</h2>
+              <p className="text-lg mb-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+          </section>
+
+          <section className="py-20">
+            <div className="container mx-auto text-center">
+              <h2 className="text-4xl font-bold mb-8">Testimonial</h2>
+              <p className="text-lg mb-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+          </section>
+
         </div>
+
       </main>
     </>
   )

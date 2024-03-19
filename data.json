@@ -60,5 +60,27 @@
             "fb": "https://www.fb.com/",
             "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium optio, eaque rerum! Provident similique accusantium nemo autem. Veritatis obcaecati tenetur iure eius earum ut molestias architecto voluptate aliquam nihil, eveniet aliquid culpa officia aut! Impedit sit sunt quaerat, odit, quia. Quo neque error repudiandae fuga? Ipsa laudantium molestias eos sapiente officiis modi at sunt excepturi expedita sint? Sed quibusdam"
         }
+    ],
+    "philosophies": [
+        {
+            "title": "Innovation and Adaptability",
+            "description": "Embrace innovation and adaptability, pushing the boundaries of inline skating through creativity and flexibility.",
+            "icon": "/icons/adaptibility.svg"
+        },
+        {
+            "title": "Unity in Motion",
+            "description": "Find strength and connection through motion, fostering unity and camaraderie within the inline skating community.",
+            "icon": "/icons/unity.svg"
+        },
+        {
+            "title": "Embracing Challenge",
+            "description": "Welcome challenges as opportunities for growth, resilience, and personal development in the pursuit of excellence.",
+            "icon": "/icons/embracing.svg"
+        },
+        {
+            "title": "Empowerment through Movement",
+            "description": "Experience empowerment through movement, discovering confidence, freedom, and self-expression on wheels.",
+            "icon": "/icons/speed.svg"
+        }
     ]
 }

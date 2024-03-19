@@ -3,6 +3,8 @@ module.exports = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx}",
     "./components/**/*.{js,ts,jsx,tsx}",
+    'node_modules/flowbite-react/lib/esm/**/*.js',
+
   ],
   theme: {
     extend: {},
@@ -12,4 +14,8 @@ module.exports = {
       'caveat': 'Caveat'
     }
   },
+  plugins: [
+    // ...
+    require('flowbite/plugin'),
+  ],
 }

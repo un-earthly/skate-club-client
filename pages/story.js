@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import React from 'react'
-import data from "../data.json"
+import data from "../data.json";
+
 export default function Story() {
     return (
         <>
@@ -10,18 +11,41 @@ export default function Story() {
                 <title>{data.titles.story}</title>
             </Head>
             <main className='body__content'>
-                <h1>
-                    story of why the company was founded
-                </h1>
-                <h1>
-                    Highlight your background and your founding team&apos;s role
-                </h1>
-                <h1>
-                    Document the evolution of the company
-                </h1>
-                <h1>
-                    Document the mission and vision
-                </h1>
+                <div className="bg-gray-100 py-8">
+                    <div className="container mx-auto px-4">
+                        <h2 className="text-3xl font-bold text-center mb-8">Our Story</h2>
+                        <div className="max-w-3xl mx-auto">
+                            <div className="bg-white rounded-lg overflow-hidden shadow-md mb-8">
+                                <div className="p-6">
+                                    <h3 className="text-xl font-semibold mb-4">Passion Ignited</h3>
+                                    <p className="text-gray-700 mb-4">It all began with a shared love for the freedom and creativity that skateboarding embodies. From the adrenaline rush of landing their first kickflip to the sense of camaraderie found within skate parks, our founders found solace and inspiration on four wheels and a wooden board. Skateboarding wasn’t just a hobby; it became a way of life.</p>
+                                    <img src="placeholder_image_url" alt="Passion Ignited" className="w-full h-auto mb-4" />
+                                </div>
+                            </div>
+                            <div className="bg-white rounded-lg overflow-hidden shadow-md mb-8">
+                                <div className="p-6">
+                                    <h3 className="text-xl font-semibold mb-4">The Struggle</h3>
+                                    <p className="text-gray-700 mb-4">But building a skateboarding community in Bangladesh wasn’t without its challenges. Limited access to proper equipment, lack of designated skate spaces, and societal misconceptions about the sport posed significant hurdles. Yet, fueled by their unwavering determination, our founders refused to let these obstacles deter them. They rallied fellow enthusiasts, organized grassroots events, and tirelessly advocated for the recognition of skateboarding as a legitimate sport.</p>
+                                    <img src="placeholder_image_url" alt="The Struggle" className="w-full h-auto mb-4" />
+                                </div>
+                            </div>
+                            <div className="bg-white rounded-lg overflow-hidden shadow-md mb-8">
+                                <div className="p-6">
+                                    <h3 className="text-xl font-semibold mb-4">Turning Dreams into Reality</h3>
+                                    <p className="text-gray-700 mb-4">Through countless hours of dedication and perseverance, our founders began to see their vision materialize. What started as a small group of passionate individuals grew into a thriving community, united by a shared love for skateboarding and a common goal of pushing boundaries. Skate parks were built, competitions were held, and barriers were broken – all thanks to the unwavering commitment of our founders and the support of our growing community.</p>
+                                    <img src="placeholder_image_url" alt="Turning Dreams into Reality" className="w-full h-auto mb-4" />
+                                </div>
+                            </div>
+                            <div className="bg-white rounded-lg overflow-hidden shadow-md mb-8">
+                                <div className="p-6">
+                                    <h3 className="text-xl font-semibold mb-4">Join Us</h3>
+                                    <p className="text-gray-700 mb-4">Today, our skate club stands as a testament to the power of passion, perseverance, and community. But our journey is far from over. We invite you to join us as we continue to push the limits, break down barriers, and spread the joy of skateboarding throughout Bangladesh. Whether you’re a seasoned skater or a curious beginner, there’s a place for you in our ever-growing family.</p>
+                                    <img src="placeholder_image_url" alt="Join Us" className="w-full h-auto mb-4" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </main>
         </>
     )

@@ -12,7 +12,34 @@ export default function Policies() {
         <title>{data.titles.policies}</title>
       </Head>
       <main className='body__content'>
-        Policies</main>
+        
+        <div className="container mx-auto px-4 py-8">
+          <h2 className="text-3xl font-bold text-center mb-8">Skate Club Rules and Regulations</h2>
+          <div className="max-w-lg mx-auto">
+            <h3 className="text-xl font-semibold mb-4">1. Safety First</h3>
+            <p className="text-gray-700 mb-4">
+              The safety of all members is our top priority. Always wear proper safety gear, including helmets, knee pads, elbow pads, and wrist guards while skating.
+            </p>
+            <h3 className="text-xl font-semibold mb-4">2. Respect Others</h3>
+            <p className="text-gray-700 mb-4">
+              Treat fellow skaters, coaches, and staff with respect. Any form of bullying, harassment, or discrimination will not be tolerated.
+            </p>
+            <h3 className="text-xl font-semibold mb-4">3. Keep the Skate Park Clean</h3>
+            <p className="text-gray-700 mb-4">
+              Help maintain the cleanliness of the skate park by picking up after yourself. Dispose of trash in designated bins and report any maintenance issues to the staff.
+            </p>
+            <h3 className="text-xl font-semibold mb-4">4. Follow Park Rules</h3>
+            <p className="text-gray-700 mb-4">
+              Obey all posted rules and regulations of the skate park. Failure to comply may result in loss of park privileges.
+            </p>
+            <h3 className="text-xl font-semibold mb-4">5. Have Fun</h3>
+            <p className="text-gray-700 mb-4">
+              Remember, skateboarding is about having fun! Enjoy your time at the skate park and encourage others to do the same.
+            </p>
+          </div>
+        </div>
+      </main>
+
     </>
   )
 }

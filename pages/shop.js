@@ -1,7 +1,14 @@
 import Head from 'next/head'
-import React from 'react'
+import React, { useState } from 'react'
 import data from "../data.json"
 export default function Shop() {
+    const [products] = useState([
+        { id: 1, name: "Skateboard Deck", price: 49.99, imageUrl: "skateboard_deck.jpg" },
+        { id: 2, name: "Skateboard Wheels", price: 29.99, imageUrl: "skateboard_wheels.jpg" },
+        { id: 3, name: "Skateboard Trucks", price: 39.99, imageUrl: "skateboard_trucks.jpg" },
+        // Add more products as needed
+    ]);
+
     return (
         <>
             <Head>
@@ -11,7 +18,21 @@ export default function Shop() {
                 <title>{data.titles.shop}</title>
             </Head>
             <main className='body__content'>
-                Shop
+                <div className="container mx-auto px-4 py-8">
+                    <h2 className="text-3xl font-bold text-center mb-8">Shop Now</h2>
+                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                        {products.map((product) => (
+                            <div key={product.id} className="bg-white rounded-lg shadow-md overflow-hidden">
+                                <img src={product.imageUrl} alt={product.name} className="w-full h-64 object-cover" />
+                                <div className="p-4">
+                                    <h3 className="text-xl font-semibold mb-2">{product.name}</h3>
+                                    <p className="text-gray-600 mb-2">${product.price.toFixed(2)}</p>
+                                    <button className="bg-blue-500 text-white py-2 px-4 rounded-lg font-semibold hover:bg-blue-600 focus:outline-none">Add to Cart</button>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                </div>
             </main>
         </>
     )
